@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background_color"
+        tools:context=".ui.screens.createjogfragment.CreateJogFragment">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/date_text_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/date"
+            app:layout_constraintBottom_toTopOf="@+id/time_text_field"
+            app:layout_constraintEnd_toEndOf="@+id/time_text_field"
+            app:layout_constraintStart_toStartOf="@+id/time_text_field">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_text_input"
+            android:inputType="date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/time_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/time_text_input"
+                android:inputType="time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/distance_text_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/distance"
+            app:layout_constraintEnd_toEndOf="@+id/time_text_field"
+            app:layout_constraintStart_toStartOf="@+id/time_text_field"
+            app:layout_constraintTop_toBottomOf="@+id/time_text_field">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/distance_text_input"
+        android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/send_jog"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/distance_text_field"
+            app:layout_constraintTop_toBottomOf="@+id/distance_text_field" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

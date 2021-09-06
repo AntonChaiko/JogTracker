@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusBottomEnd">@dimen/border_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/border_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/border_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/border_radius</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:enabled">false</item>
+    </style>
+</resources>
